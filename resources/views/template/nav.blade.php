@@ -1,24 +1,16 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-warning">
-  <div class="container">
-    <a class="navbar-brand" href="#">Smea Juara</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Jurusan</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Peserta Ujikom</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Juri Ujikom</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<nav class="navbar navbar-light bg-warning">
+      <div class="container">
+        <a class="navbar-brand fs-1" href="#">
+          <img src="https://png.pngtree.com/png-clipart/20210328/original/pngtree-the-online-shop-logo-uses-a-colorful-house-concept-png-image_6151588.jpg" alt="" width="60" height="55" class="d-inline-block align-text-top" />
+          Tokko Online
+        </a>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Cari Apa Kak?" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+        <div class="position-relative">
+          <a class="text-success start-0" href="{{route('home')}}">Home |</a>
+          <a class="text-success end-0" href="{{route('login')}}"> Login</a>
+        </div>
+      </div>
+    </nav>

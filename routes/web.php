@@ -13,4 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'ujikombisa@login')-> name('login');
+Route::get('/', 'ujikombisa@home')-> name('home');
+
+Route::get('/login', 'ujikombisa@login')-> name('login');
+Route::get('/detail/{produk}', 'ujikombisa@detail')->name('pelanggan.detail');
